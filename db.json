@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "6cfc",
+      "username": "locboss",
+      "role": "dev",
+      "company": "cmc",
+      "address": "agaga"
+    },
+    {
+      "id": "a889",
+      "username": "locboss",
+      "role": "dev",
+      "company": "cmc",
+      "address": "agaga"
+    },
+    {
+      "id": "ffff",
+      "username": "vádg",
+      "role": "dev",
+      "company": "cmc",
+      "address": "gá"
+    }
+  ]
+}

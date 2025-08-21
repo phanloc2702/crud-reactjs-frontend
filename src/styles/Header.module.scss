@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:24px;
+    background: #fff;
+    padding: 16px ;
+    max-width: 1400px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    img{
+        max-width: 120px;
+
+    }
+    &_author{
+        display: inline-flex;
+        align-items: center;
+        gap:10px;
+    }
+    &_username{
+        font-size: 14px;
+    }
+    &_cta{
+        background: transparent;
+        border: none;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        padding: 0;
+        span{
+            display: inline-flex;
+        }
+        img{
+            max-width: 10px;
+        }
+    }
+
+}
