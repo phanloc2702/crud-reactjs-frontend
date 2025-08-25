@@ -20,10 +20,10 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-
+        color: #160d16;
     }
     label {
-        color: #737373;
+        color: #160d16;
         font-weight: 700;
     }
     input,select{
@@ -31,7 +31,7 @@
         overflow: hidden; 
         border-radius: 8px;
         background: #f5f5f5;
-        color: #737373;
+        color: #160d16;
         border: none;
         outline: none;
         padding: 16px;
@@ -40,6 +40,7 @@
     }
     select{
         appearance: none;
+        color: #160d16;
     }
     &_btn_group{
         display: flex;
@@ -48,7 +49,7 @@
         gap:8px;
     }
     button{
-        background: #737373;
+        background: #007fff;
         color:#fff;
         border: none;
         outline: none;

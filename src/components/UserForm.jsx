@@ -37,6 +37,23 @@ export default function UserForm(){
             setMsg("All fields are required!");
             return;
         }
+
+        if(params?.id){
+            fetch(`http://localhost:3001/users/${params?.id}`, {
+                method:"PUT",
+                headers: {
+                    "Content-Type":"application/json",
+                },
+                body: JSON.stringify({...user}),
+            })
+            .then(()=>{
+            setMsg("Updated user successfully!");
+            timeoutID = setTimeout(() =>{
+                navigate("/");
+            },500);
+            });
+        }else{
+
         fetch("http://localhost:3001/users",{
             method:"POST",
             headers:{
@@ -50,6 +67,7 @@ export default function UserForm(){
             },500)
         
         });
+        }
 
     }
     return (

@@ -42,7 +42,7 @@ export default function(){
         }
         if(user?.email?.trim() === "larry" && user?.password?.trim() ==="larry"){
             localStorage.setItem("user", JSON.stringify(user));
-            setMsg("Login successfully!");
+            
             timeoutID = setTimeout(()=>{
                 navigate("/");
             }, 1000);
@@ -65,10 +65,11 @@ export default function(){
       
       <div className={styles.formSection}>
         <div className={styles.logo}>
-          <img src="/logo192.png" alt="logo" /> {/* bạn thay logo riêng nếu có */}
+          <img src="/logo192.png" alt="logo" /> 
         </div>
         <h2>Welcome back!</h2>
         <p>Please enter your credentials to sign in!</p>
+
         <p className={styles.msg}>{msg}</p>
 
         <form className={styles.form} onSubmit={onSubmit}>
